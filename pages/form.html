@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Codifun</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Codifun inspire me!</h1>
+        <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</em></p>
+    </header>
+    <nav>
+        <a href="../index.html">Главная страница</a>
+        <a href="../pages/interesting_facts.html">Интересные факты</a>
+        <a href="../pages/address.html">Адрес</a>
+        <a href="../pages/form.html">Заполните форму</a>
+    </nav>
+    <section>
+        <h2 style="text-align: center;">Форма с персональными данными &#x2663</h2>
+        <div style="text-align: center;">
+            <canvas id="myCanvas" width="300" height="80" style="border: 2px solid #a7a3a3;">
+                Ваш веб-браузер не поддерживает элемент Canvas, который появился в версии HTML 5.
+            </canvas>
+        </div>
+        <br>
+        <br>
+        <h4 style="display: inline;">Нажмите, чтобы вернуться</h4>
+        <a href="../index.html">
+            <svg width="50" height="50">
+                <circle cx="25" cy="25" r="20" stroke="green" stroke-width="4" fill="yellow" />
+            </svg>
+        </a>
+        <br>
+        <br>
+        <form action="www.example.com." method="POST">
+            <label>
+                Имя:<br>
+                <input type="text" name="Имя">
+            </label>
+            <br>
+            <br>
+            <label>
+                Фамилия:<br>
+                <input type="text" name="Фамилия">
+            </label>
+            <br>
+            <br>
+            <label>
+                Дата рождения:<input type="даты" name="даты" value="mm / dd / yyyy">
+            </label>
+            <br>
+            <br>
+            <label>
+                Страна проживания:<select name="страны" multiple size="1">
+                    <option value="1">Республика Молдова</option>
+                    <option value="2">Румыния</option>
+                    <option value="3" selected>Украина</option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <label>
+                Интересы:<br>
+                <input type="checkbox" name="Интересы" value="HTML" checked>HTML<br>
+                <input type="checkbox" name="Интересы" value="Javascript">Javascript<br>
+                <input type="checkbox" name="Интересы" value="PHP" checked>PHP<br>
+                <input type="checkbox" name="Интересы" value="CSS" checked>CSS<br>
+            </label>
+            <br>
+            <label>
+                E-mail:<input type="email" name="email">
+                <br>
+                <br>
+                Password:<input type="password" name="password">
+            </label>
+            <br>
+            <br>
+            <label>
+                Как часто хотите получать уведомления на электронную почту?
+                <br>
+                <input type="radio" name="span" value="Еженедельно">Еженедельно<br>
+                <input type="radio" name="span" value="Ежемесячно">Ежемесячно<br>
+                <input type="radio" name="span" value="Никогда">Никогда<br>
+            </label>
+            <br>
+            <br>
+            Ваше мнение о Codifun:
+            <br>
+            <br>
+            <textarea name="my_text" rows="8" cols="50"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Отправить">
+        </form>
+    </section>
+    <footer>
+        <h3 id="demo"></h3>
+    </footer>
+    <script type="text/javascript">
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.font = "25px Arial";
+    ctx.fillText("Hello World", 75, 45);
+    </script>
+    <script type="text/javascript">
+    document.getElementById("demo").innerHTML = "Знания создают ваше будущие!";
+    </script>
+</body>
+
+</html>
